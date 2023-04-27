@@ -56,9 +56,11 @@ end
 > 3,6 GHz Quad-Core Intel Core i3, Mac Mini 2018
 
 ```crystal
+values = (0_u64..1_000_000_u64).to_a
+
 puts Benchmark.measure {
-  1_000_000.times do |i|
-    Guava.jump(i.to_u64, 10_i32)
+  values.values do |i|
+    Guava.jump(i, 10_i32)
   end
 }
 ```
