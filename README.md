@@ -59,7 +59,7 @@ end
 values = (0_u64..1_000_000_u64).to_a
 
 puts Benchmark.measure {
-  values.values do |i|
+  values.each do |i|
     Guava.jump(i, 10_i32)
   end
 }
