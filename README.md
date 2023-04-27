@@ -13,7 +13,6 @@ Add this to your application's `shard.yml`:
 dependencies:
   guava:
     github: creadone/guava
-    version: "~> 0.1.0"
 ```
 
 Then run `shards install`.
