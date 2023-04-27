@@ -9,3 +9,6 @@ authors:
 crystal: 1.6.1
 
 license: MIT
+
+scripts:
+  postinstall: make
