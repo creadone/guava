@@ -1,0 +1,11 @@
+name: guava
+version: 0.1.0
+
+description: Jump Consistent Hash
+
+authors:
+  - creadone <creadone@gmail.com>
+
+crystal: 1.6.1
+
+license: MIT
