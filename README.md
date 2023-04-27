@@ -33,9 +33,10 @@ Guava.jump(7234672323_u64, 12_i32) # => 9
 require "guava"
 
 ary = Array.new(10){ Array.new(1){ 0 } }
+values = (0_u64..1_000_000_u64).to_a
 
-1_000_000.times do |i|
-  num = Guava.jump(i.to_u64, 10_i32)
+values.each do |i|
+  num = Guava.jump(i, 10_i32)
   ary[num].push 0
 end
 
